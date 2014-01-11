@@ -1,0 +1,10 @@
+   *** Update 01
++ Correcion de carga de iconos en botones ventana alumnos.FramePersonal
++ Correcion de metodo btnEliRegActionPerformed (action del boton eliminar) en ventana alumnos.FrameDesAca
++ Arreglo visual control jLabel1 ventana alumnos.FramePersonal (desbordamiento de texto)
++ Arreglo visual control jLabel3 ventana alumnos.FrameAsesoria (desbordamiento de texto)
++ Arreglo visual control jLabel3 ventana alumnos.FrameDesAca (desbordamiento de texto)
++ Arreglo visual control jLabel1 ventana alumnos.FrameDesGru (desbordamiento de texto)
++ Verificación de concordancia case-sensitive archivos de manual de ayuda
+   *** Update 02
++ Correciones ortograficas varias
