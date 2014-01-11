@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html40/strict.dtd">
+<html>
+<head>
+  <title> SADAA manual de usuario </title>
+  <meta name="author" content="Pedro Cardoso Rodriguez" lang="es">
+  <link rel="stylesheet" href="estilo.css" media="screen" type="text/css">
+</head>
+
+<body>
+<!-- titulo -->
+<h1>men&uacute; Grupos</h1>
+<!-- men&uacute;/submen&uacute; -->
+<p class="mnu">
+<a href="index.html"> Como iniciar </a>|
+<a href="sistema.html"> Sistema </a>|
+<a href="alumnos.html"> Alumnos </a>|
+<span class="act"> Grupos </span>|
+<a href="asesorias.html"> Asesor&iacute;as a tesistas </a>|
+<a href="catbib.html"> Catalogo bibliogr&aacute;fico </a><br>
+<a href="#nuevo" class="submen&uacute;"> Crear grupo </a>|
+<a href="#fichag" class="submen&uacute;"> Manejar el registro de grupo </a>|
+<a href="#cal" class="submen&uacute;"> Calendarizar sesiones </a>|
+<a href="#eval" class="submen&uacute;"> Programar rubros de evaluaci&oacute;n </a>|
+<a href="#repgru" class="submen&uacute;"> Reportes de grupo </a>|
+<a href="#busca" class="submen&uacute;"> Buscar grupo(s) </a>
+<blockquote>
+</p>
+<!-- contenido -->
+<div class="cont">
+<p>El sistema proporciona el soporte necesario para que pueda manejar un registro por cada grupo a su  cargo, dentro del
+registro de cada grupo se manejan los datos particulares del grupo como son grado, grupo, materia impartida, periodo de
+vigencia, y la lista de alumnos. Opcionalmente puede crear un calendario de sesiones para un grupo con lo cual podr&aacute; 
+llevar el registro de asistencias de los alumnos, tambi&eacute;n puede programar los rubros de evaluaci&oacute;n tales como tareas,
+proyectos, trabajos, investigaciones, ex&aacute;menes, etc.</p>
+<h3><a name="nuevo">Crear un nuevo registro de grupo</a></h3>
+<p>Para crear el registro de un nuevo grupo:
+<ul>
+  <li>Haga click en el men&uacute; <em>Alumnos</em></li>
+  <li>Haga click en el submen&uacute; <em>Grupos</em></li>
+  <li>Haga click en el submen&uacute; <em>Nuevo grupo</em></li>
+  <li>En la ventana <em>Crear grupo nuevo</em> capture los datos personales del
+  grupo<br>(la materia debe seleccionarla de la lista desplegable y las opciones son las
+  materias proporcionadas en la ventana Datos del docente)</li>
+  <li>Haga click en el bot&oacute;n <em>Guardar</em> <img src="img/guarda.jpg"></li>
+  <li>El valor de la clave de grupo se generara autom&aacute;ticamente<br>
+  (la clave se compone por los datos: grado grupo+clave de materia+inicio de vigencia-fin de vigencia)</li>
+  <li>Opcionalmente, una vez creado el registro puede utilizar los botnes de la barra superior
+    <ul>
+    <li><img src="img/grupos.jpg"> Abre el registro del grupo (Ahí puede manejar la lista de alumnos)</li>
+    <li><img src="img/calendario.jpg"> Abre el calendario de sesiones del grupo</li>
+    <li><img src="img/rubroseval.jpg"> Abre la ventana de programaci&oacute;n de rubros de evaluaci&oacute;n</li>
+    </ul>
+  </li>
+  <li>Si desea crear un nuevo registro haga click en el bot&oacute;n <em>Limpiar
+   campos</em> <img src="img/limpia.jpg"></li>
+</ul>
+<img src="img/nuevogru.jpg">
+</p>
+<h3><a name="fichag">Manejar el registro de grupo</a></h3>
+<p>La ventana ficha de grupo proporciona soporte para manejar los datos de un grupo, puede ver o modificar los 
+datos particulares de un grupo (grado, grupo, materia, aula), as&iacute; como la lista de alumnos, asistencias y las
+calificaciones para los rubros de evaluaci&oacute;n programados.</p>
+<p>Para manejar el registro de un grupo:
+<ul>
+  <li>Haga click en el men&uacute; <em>Alumnos</em></li>
+  <li>Haga click en el submen&uacute; <em>Grupos</em></li>
+  <li>Haga click en el submen&uacute; <em>Ficha de grupo</em>
+   <br>(tambi&eacute;n puede oprimir la combinaci&oacute;n de teclas Ctrl+G para abrir la ventana Ficha de grupo)</li>
+  <li>En la ventana <em>Ficha de grupo</em> ingrese la clave del grupo
+  en el campo <em>Buscar Clave</em></li>
+  <li>Haga click en el bot&oacute;n <em>Cargar</em></li>
+  <li>Si la clave es correcta y existe el registro se cargaran los datos del grupo</li>
+  <li>La ventana se divide en dos &aacute;reas en la parte superior encontrara los datos del grupo mientras
+  que en la parte inferior podr&aacute; manejar la lista de alumnos (para toma de asistencias o calificar rubros)</li>
+  <li>Si desea corregir o modificar alg&uacute;n dato (excepto la clave y la lista de alumnos) puede hacerlo
+  escribiendo el nuevo valor en el lugar correspondiente, para guardar los cambios haga clik en el bot&oacute;n
+  <em>Guardar</em> <img src="img/guarda.jpg"></li>
+  <li>Si desea crear o modificar el calendario de sesiones del grupo haga clik en el bot&oacute;n
+  <em>Calendario de sesiones</em> <img src="img/calendario.jpg"></li>
+  <li>Si desea crear o modificar la lista de rubros de evaluaci&oacute;n del grupo haga clik en el bot&oacute;n
+  <em>Programaci&oacute;n de rubros de evaluaci&oacute;n</em> <img src="img/rubroseval.jpg"></li>
+  <li>Si desea puede imprimir un reporte haga clik en el bot&oacute;n <em>Imprimir un reporte</em>
+  <img src="img/impresora.jpg"> Aparecer&aacute; una lista con tres opciones: Lista de alumnos, Calificaciones de un rubro
+  o Porcentaje de asistencia. Si elije Calificaciones de un rubro aparecer&aacute; una lista con los rubros existentes,
+  elija el rubro del cual quiere imprimir un reporte.</li>
+  <li>Si desea eliminar el grupo haga clik en el bot&oacute;n <em>Eliminar grupo
+  actual</em> <img src="img/elimina.jpg"><br><span class="rojo">(debe considerar que se
+  eliminaran los datos completamente, incluyendo el calendario, as&iacute; como las asistencias y los rubros de
+  evaluaci&oacute;n del grupo)</span></li>
+</ul>
+<img src="img/fichagru.jpg">
+</p>
+<p>Sobre la lista de alumnos del grupo:
+<ul>
+  <li>Para agregar un alumno al grupo primero deber&aacute; haber creado el registro de alumno<br>
+  <a href="alumnos.html#nuevo">Gu&iacute;a para hacerlo</a></li>
+  <li>Puede agregar alumnos haciendo click en el bot&oacute;n <em>Agregar</em> se le pedir&aacute; la matricula
+  del alumno a agregar</li>
+  <li>Puede quitar alumnos del grupo haciendo click en el bot&oacute;n <em>Quitar</em> se le pedir&aacute; la
+  matricula del alumno a quitar<br>(esta acci&oacute;n no afectara el registro personal del alumno ni su
+  pertenencia a otros grupos o su registro de tesis)</li>
+  <li>Si hace click con el bot&oacute;n derecho del mouse en la matricula de un alumno aparecer&aacute; un men&uacute;
+  con opciones para ver los registro de desempeño, asesor&iacute;as o personal del alumno correspondiente</li>
+  <li>Para tomar asistencia de alumnos, debe seleccionar <em>Lista de asistencias.</em> Por cada alumno haga click 
+  con el bot&oacute;n derecho del mouse en la columna de la sesi&oacute;n de la cual quiere registrar la asistencia, 
+  aparecer&aacute; un men&uacute; elija la opci&oacute;n correspondiente. Una vez tomada(s) la(s) asistencia(s) de 
+  los alumno(s) haga click en el bot&oacute;n <em>Guardar asistencia</em> para que las asistencias se guarden permanentemente</li>
+  <li>Para calificar alumnos, debe seleccionar <em>Lista de calificaciones.</em> Por cada alumno haga click con bot&oacute;n
+  derecho del mouse en la columna del rubro del cual quiere calificar, aparecer&aacute; un men&uacute; elija la
+  opci&oacute;n correspondiente. Una vez tomada(s) la(s) calificaci&oacute;n(es) de los alumno(s) haga click en el
+  bot&oacute;n <em>Guardar Calificaciones</em> para que las calificaciones se guarden permanentemente</li>
+</ul>
+</p>
+<h3><a name="cal">Calendarizar sesiones de un grupo</a></h3>
+<p>Para calendarizar las sesiones de un grupo:
+<ul>
+  <li>Haga click en el men&uacute; <em>Alumnos</em></li>
+  <li>Haga click en el submen&uacute; <em>Grupos</em></li>
+  <li>Haga click en el submen&uacute; <em>Calendario de grupo</em>
+   <br>(tambi&eacute;n puede oprimir la combinaci&oacute;n de teclas Ctrl+M para abrir la ventana Calendario de grupo)</li>
+  <li>En la ventana <em>Calendario de grupo</em> ingrese la clave del grupo
+  en el campo <em>Buscar Clave</em></li>
+  <li>Haga click en el bot&oacute;n <em>Cargar</em></li>
+  <li>Si la clave es correcta y existe el grupo se cargara el calendario con las sesiones
+  programadas del grupo</li>
+  <li>Si desea ver la ficha del grupo haga clik en el bot&oacute;n
+  <em>Ficha de grupo</em> <img src="img/grupos.jpg"></li>
+  <li>Si desea ver los rubros de evaluaci&oacute;n programados para el grupo haga clik en el bot&oacute;n
+  <em>Programaci&oacute;n de rubros de evaluaci&oacute;n</em> <img src="img/rubroseval.jpg"></li>
+  <li>Puede imprimir un reporte con la lista sesiones programadas haga clik en el bot&oacute;n
+  <em>Imprimir reporte</em> <img src="img/impresora.jpg"></li>
+</ul>
+<img src="img/calgru.jpg">
+</p>
+<p>Sobre la lista de sesiones programas del grupo:
+<ul>
+  <li>Cada sesi&oacute;n programada tiene su propio registro</li>
+  <li>Puede agregar sesiones haciendo click en el bot&oacute;n <em>Agregar</em><br>
+   (tambi&eacute;n puede definir en el &aacute;rea horario semanal los d&iacute;as y horas de las semana en que<br>
+   tiene sesi&oacute;n y generar autom&aacute;ticamente las sesiones desde ah&iacute; correspondientes al periodo de vigencia)</li>
+  <li>Puede modificar datos de sesiones existentes haciendo click en el bot&oacute;n <em>Modificar</em></li>
+  <li>Puede quitar sesiones existentes haciendo click en el bot&oacute;n <em>Quitar</em><br>
+  <span class="rojo">(si quita una sesi&oacute;n se borraran las asistencias que pudieran haber sido
+  registradas para la fecha correspondiente)</span></li>
+  <li>En el &aacute;rea <em>Avance en objetivos</em> puede ver la lista de objetivos del curso<br>
+   (los temas registrados para ver en las sesiones cuentan como un objetivo)<br>
+   Al seleccionar un objetivo puede registrar avances obtenidos</li>
+  <li>En el &aacute;rea <em>Horario semanal</em> puede ver los horarios y d&iacute;as de sesi&oacute;n con el grupo</li>
+</ul>
+<img src="img/regindsesgru.jpg">
+</p>
+<h3><a name="eval">Programar rubros de evaluaci&oacute;n de un grupo</a></h3>
+<p>Para programar los rubros de evaluaci&oacute;n de un grupo:
+<ul>
+  <li>Haga click en el men&uacute; <em>Alumnos</em></li>
+  <li>Haga click en el submen&uacute; <em>Grupos</em></li>
+  <li>Haga click en el submen&uacute; <em>Rubros de evaluaci&oacute;n</em></li>
+  <li>En la ventana <em>Rubros de evaluaci&oacute;n</em> ingrese la clave del grupo
+  en el campo <em>Buscar Clave</em></li>
+  <li>Haga click en el bot&oacute;n <em>Cargar</em></li>
+  <li>Si la clave es correcta y existe el grupo se cargara la lista de rubros de evaluaci&oacute;n
+  programados para el grupo</li>
+  <li>Si desea ver la ficha del grupo haga clik en el bot&oacute;n
+  <em>Ficha de grupo</em> <img src="img/grupos.jpg"></li>
+  <li>Si desea ver las sesiones programadas para el grupo haga clik en el bot&oacute;n
+  <em>Calendario de sesiones</em> <img src="img/calendario.jpg"></li>
+</ul>
+<img src="img/rubevalgru.jpg">
+</p>
+<p>Sobre la lista de rubros de evaluaci&oacute;n
+<ul>
+  <li>Cada rubro de evaluaci&oacute;n tiene su propio registro</li>
+  <li>Puede agregar rubros haciendo click en el bot&oacute;n <em>Agregar</em></li>
+  <li>Puede modificar datos de rubros existentes haciendo click en el bot&oacute;n <em>Modificar</em></li>
+  <li>Puede quitar rubros existentes haciendo click en el bot&oacute;n <em>Quitar</em><br>
+  <span class="rojo">(si quita un rubro se borraran las calificaciones que pudieran haber sido registradas)</span></li>
+</ul>
+<img src="img/regindrubro.jpg">
+</p>
+<h3><a name="repgru">Reportes de grupo</a></h3>
+<p>Puede crear reportes gr&aacute;ficos de estad&iacute;sticas de un grupo. El sistema puede generar cuatro tipos de reportes en base a
+los datos acumulados del avance de actividades del grupo.</p>
+<p> Para generar los reportes
+ <ul>
+  <li>Haga click en el men&uacute; <em>Reportes</em></li>
+  <li>Haga click en el submen&uacute; <em>Por grupo</em></li>
+  <li>En la ventana <em>Reportes de grupo</em> indique la clave del grupo haga click en <em>Cargar.</em></li>
+  <li>Si hay datos suficientes se generaran los siguientes cuatro reportes</li>
+  <li>Porcentaje visto por tema en el curso<br>
+   Muestra el porcentaje visto por cada tema que abarca el curso<br>
+   los temas abarcados son aquellos registrados en datos del docente en la materia respectiva del grupo</li>
+  <li>Gasto de tiempo por tema en el curso<br>
+   Muestra el gasto en minutos por cada tema que abarca el curso</li>
+  <li>Calificaci&oacute;n por rubro para grupo<br>
+   Muestra la calificaci&oacute;n obtenida por el grupo (promedio de todos los alumnos)<br>
+   por cada rubro de evaluaci&oacute;n planeado.</li>
+  <li>Porcentaje de avance en objetivos planeados<br>
+   Muestra el porcentaje de avance por cada objetivo planeado para el curso</li>
+ </ul>
+ <img src="img/repgrupo.jpg">
+ </p>
+<h3><a name="busca">Buscar grupo(s)</a></h3>
+<p>Para buscar uno o m&aacute;s grupos:
+<ul>
+  <li>Haga click en el men&uacute; <em>Alumnos</em></li>
+  <li>Haga click en el submen&uacute; <em>Grupos</em></li>
+  <li>Haga click en el submen&uacute; <em>Buscar</em>
+   <br>(tambi&eacute;n puede oprimir la combinaci&oacute;n de teclas Ctrl+U para abrir la ventana de b&uacute;squeda)</li>
+  <li>Par&aacute;metros para buscar
+    <ul>
+    <li>Ingrese el valor de al menos un campo de b&uacute;squeda</li>
+    <li>Si va a usar dos o m&aacute;s campos de b&uacute;squeda seleccione si desea que la b&uacute;squeda muestre
+    resultados que cumplan <em>al menos un criterio</em> o <em>todos los criterios</em><br>(por ejemplo
+    si busca grado=5 grupo=A y selecciona la opci&oacute;n <em>al menos un criterio</em>
+    se buscaran los grupos grado 5 (sin importar el grupo) <em>o</em> grupos A (sin importar el grado);
+    con la otra opci&oacute;n se buscaran los grupos 5A)</li>
+    </ul>
+  </li>
+  <li>Haga click en el bot&oacute;n <em>Buscar</em></li>
+  <li>Si se encuentra un solo grupo se abrir&aacute; directamente su <em>Ficha de grupo</em></li>
+  <li>Si se encuentran dos o m&aacute;s grupos se abrir&aacute; la ventana de <em>Resultado de b&uacute;squedas</em>
+  en la cual haciendo click con el bot&oacute;n derecho del mouse dispondr&aacute; de las opciones para ver la
+  ficha, el calendario o la ventana de rubros de evaluaci&oacute;n programados para el grupo</li>
+</ul>
+<img src="img/busgru.jpg">
+</p>
+</div>
+</blockquote>
+<p id="licencia"> Copyright © 2010 Pedro Cardoso Rodríguez. Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation;
+with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section 
+entitled "GNU Free Documentation License". </p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+  body { background-color:#eaeaff; }
+  h1 { text-align:center; }
+  p.mnu { text-align:center; }
+  span.act { background-color:white; }
+  span.act { font-size:1.3em; }
+  span.res { font-weight:bold; }
+  span.res { font-size:1.1em; }
+  .submenu { background-color:white; }
+  .rojo { color:red; }
+  #licencia { font-size:.8em; width:75%; margin:3em auto; }

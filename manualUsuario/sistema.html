@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html40/strict.dtd">
+<html>
+<head>
+  <title> SADAA manual de usuario </title>
+  <meta name="author" content="Pedro Cardoso Rodriguez" lang="es">
+  <link rel="stylesheet" href="estilo.css" media="screen" type="text/css">
+</head>
+
+<body>
+<!-- titulo -->
+<h1>Men&uacute; Sistema</h1>
+<!-- menu/submenu -->
+<p class="mnu">
+<a href="index.html"> Como iniciar </a>|
+<span class="act"> Sistema </span>|
+<a href="alumnos.html"> Alumnos </a>|
+<a href="grupos.html"> Grupos </a>|
+<a href="asesorias.html"> Asesor&iacute;as a tesistas </a>|
+<a href="catbib.html"> Catalogo bibliogr&aacute;fico </a> <br>
+<a href="#sisven" class="submenu"> Sistema de ventanas </a>|
+<a href="#conex" class="submenu"> Conexi&oacute;n al servidor </a>|
+<a href="#segu" class="submenu"> Seguridad </a>|
+<a href="#dtsdoc" class="submenu"> Datos del docente </a>|
+<a href="#hrsema" class="submenu"> Horario semanal </a>|
+<a href="#repmate" class="submenu"> Reportes de materia </a>|
+<a href="#avisis" class="submenu"> Avisos del sistema </a>|
+<a href="#errSurprise" class="submenu"> Errores inesperados </a>|
+<a href="#pref" class="submenu"> Preferencias </a>
+<blockquote>
+</p>
+<!-- contenido -->
+<div class="cont">
+<h3><a name="sisven">Sistema de ventanas</a></h3>
+<p>El sistema trabaja utilizando ventanas m&uacute;ltiples que se manejan internamente como
+documentos hijos de la ventana principal, usted puede tener tantas ventanas hijas abiertas al mismo
+tiempo como considere necesario, la &uacute;nica restricci&oacute;n es que no puede abrir dos veces una
+ventana con el mismo contenido, por ejemplo el registro de un mismo alumno, de un mismo grupo, etc.
+En el men&uacute; <em>Ventana</em> puede ver que ventanas tiene abiertas en un momento dado y haciendo click
+sobre una opci&oacute;n puede traer al frente la ventana para localizar m&aacute;s r&aacute;pido informaci&oacute;n o registros.</p>
+<img src="img/ventanas.jpg">
+<h3><a name="conex">Conexi&oacute;n al servidor</a></h3>
+<p>Para que el sistema pueda funcionar debe establecer correctamente la conexi&oacute;n al servidor MySQL
+Para saber si el sistema est&aacute; conectado al servidor verifique el <em>icono de estado de conexi&oacute;n</em>
+en la parte inferior derecha de la ventana (junto al reloj) si hay conexi&oacute;n el icono muestra una flecha verde
+<img src="img/conok.jpg"> en caso de que no haya conexi&oacute;n establecida el icono muestra una flecha roja <img src="img/nocon.jpg">
+</p>
+<p>Para establecer la conexi&oacute;n al servidor:
+<ul>
+ <li>Haga click en el men&uacute;: <em>Sistema</em></li>
+ <li>Haga click en el submen&uacute;: <em>Conexi&oacute;n al servidor</em><br>
+    (Tambi&eacute;n puede hacer click directamente en el <em>icono de estado de conexi&oacute;n)</em>
+ </li>
+ <li>Ingrese los par&aacute;metros solicitados en la ventana: <em>Conexi&oacute;n al servidor</em><br>
+ <span class="res">A)</span> Debe ingresar la direcci&oacute;n IP de la maquina en la cual corre el
+ servidor MySQL, en caso de que sea la misma m&aacute;quina en la que est&aacute; ejecutando el sistema debe
+ seleccionar la opci&oacute;n <em>Esta m&aacute;quina es el servidor</em><br>
+ <span class="res"><a href="#nt1">*</A>B)</span> Debe ingresar el puerto de escucha del servidor, por
+ default dicho puerto es el 3306, solo debe cambiarlo si el servidor MySQL ha sido configurado con un
+ numero de puerto diferente.<br>
+ <span class="res"><a href="#nt1">*</A>C)</span> Debe ingresar el nombre de usuario con acceso al
+ servidor MySQL y con permisos de uso de la base de datos que utiliza el sistema.<br>
+ <span class="res"><a href="#nt1">*</A>D)</span> Debe ingresar el password correspondiente al usuario
+ indicado en el paso anterior.<br>
+ <span class="res">E)</span> Una vez indicados los par&aacute;metros haga click en el bot&oacute;n <em>Conectar</em>
+ Si la conexi&oacute;n se estable con &eacute;xito y desea que el sistema recuerde los par&aacute;metros para que se
+ conecte autom&aacute;ticamente cada vez que se inicie de click en el bot&oacute;n <em>Guardar par&aacute;metros</em>.<br>
+ <img src="img/vencon.jpg"><br>
+ <span class="rojo"> <span class="res"><a name="nt1">*</a></span> Si tiene dudas o desconoce alguno de
+ estos par&aacute;metros consulte al administrador del servidor de base de datos.</span>
+ </li>
+</ul>
+</p>
+<h3><a name="segu">Seguridad</a></h3>
+ <p> Se recomienda que considere debidamente la configuraci&oacute;n que desea establecer para obtener el grado
+ adecuado de seguridad de los datos que maneja a trav&eacute;s del sistema, para esto, el sistema provee de
+ un manejo de seguridad basado en la restricci&oacute;n de acciones, esto es, usted puede proteger por medio de un
+ <em>password de seguridad</em> las acciones que considere necesario, debe tener en cuenta que esto se
+ hace a nivel sistema y el password no est&aacute; asociado a ninguna clase de usuario.</p>
+ <p> Para cambiar el password de seguridad
+ <ul>
+ <li>Haga click en el men&uacute;: <em>Sistema</em></li>
+ <li>Haga click en el submen&uacute;: <em>Seguridad</em></li>
+ <li>En la ventana <em>Seguridad</em> en el campo <em>Password actual</em> ingrese el password actual<br>
+ (Si desconoce el password actual consulte al administrador del servidor de base de datos.)</li>
+ <li>En el campo <em>Nuevo password</em> introduzca en nuevo password</li>
+ <li>En el campo <em>Confirmar</em> vuelva a introducir en nuevo password</li>
+ <li>Haga click en el bot&oacute;n <em>Guardar</em></li>
+ </ul>
+ Para establecer el password de seguridad sobre determinadas acciones
+ <ul>
+ <li>Haga click en el men&uacute;: <em>Sistema</em></li>
+ <li>Haga click en el submen&uacute;: <em>Seguridad</em></li>
+ <li>Elija las acciones que desea proteger con el <em>password de seguridad</em><br>
+ <span class="res">Creaci&oacute;n de nuevos registros</span> Opci&oacute;n que engloba todas las
+ acciones para crear nuevos registros, sean estos de alumno, grupos, sesiones de un calendario,
+ sesiones de asesor&iacute;as, o registros de cualquier categor&iacute;a creados por vez primera.<br>
+ <span class="res">Modificaci&oacute;n de registros</span> Opci&oacute;n que engloba todas las acciones
+ de modificaci&oacute;n de datos de registros, sean estos de alumno, grupos, sesiones de un calendario,
+ sesiones de asesor&iacute;as, o registros de cualquier categor&iacute;a existentes y que se desea actualizar.<br>
+ <span class="res">B&uacute;squeda y visualizaci&oacute;n de datos</span> Opci&oacute;n que engloba todas las acciones
+ de b&uacute;squeda y visualizaci&oacute;n de datos de registros, sean estos de alumno, grupos, sesiones de un calendario,
+ sesiones de asesor&iacute;as, o registros de cualquier categor&iacute;a existentes y que se desea consultar.<br>
+ <span class="res">Eliminaci&oacute;n de datos</span> Opci&oacute;n que engloba todas las acciones
+ de eliminaci&oacute;n de datos de registros, sean estos de alumno, grupos, sesiones de un calendario,
+ sesiones de asesor&iacute;as, o registros de cualquier categor&iacute;a existentes y que se desea eliminar.<br>
+ </li>
+ <li>Haga click en el bot&oacute;n <em>Guardar</em></li>
+ </ul>
+ <img src="img/venseg.jpg"> <br>En la configuraci&oacute;n de la imagen las acciones Crear, Modificar y Eliminar
+ est&aacute;n seleccionadas por lo cual solo usuarios que conozcan el password de seguridad pueden llevarlas a cabo
+ mientras que cualquier otro usuario podr&iacute;a ver y consultar los datos de cualquier registro.
+ </p>
+<h3><a name="dtsdoc">Datos del docente</a></h3>
+<p>Para que todas las opciones del sistema puedan ser accesibles es necesario que proporcione datos de la instituci&oacute;n y escuela
+en que labora as&iacute; como datos del docente, tales como nombre, titulo, lista de materias impartidas y calificaci&oacute;n
+m&iacute;nima aprobatoria para cada materia. Esto es necesario para poder crear en forma completa los
+registros de los grupos y para ser utilizados en los reportes. </p>
+<p> Para establecer los datos del docente
+ <ul>
+  <li>Haga click en el men&uacute; <em>Sistema</em></li>
+  <li>Haga click en el submen&uacute; <em>Datos del docente</em></li>
+  <li>Ingrese los datos generales: <br>
+  Instituci&oacute;n educativa, Unidad acad&eacute;mica o escuela, &Aacute;rea o Programa, Nombre y Titulo profesional del docente</li>
+  <li>Por cada materia que imparta:</li>
+  <ul>
+    <li>Haga click en el bot&oacute;n <em>Agregar nueva materia</em> <img src="img/nuevamat.jpg"><br>
+    (En la sección <em>Materias que imparte</em> aparecer&aacute; una nueva pesta&ntilde;a)</li>
+    <li>Introduzca el nombre de la materia que desea agregar</li>
+    <li>Introduzca la clave de la materia que desea agregar<br>(La clave debe estar formada por
+    tres caracteres cualquiera, no debe ser igual a ninguna clave previa, y se recomienda
+    que sea lo m&aacute;s alusiva posible al nombre de la materia)</li>
+    <li>Introduzca el valor de la calificación m&iacute;nima aprobatoria</li>
+    <li>Puede crear el temario a cubrir por esta materia, haga click en el bot&oacute;n<br>
+      <em>Crear nueva versi&oacute;n</em> por cada tema del temario haga click en el bot&oacute;n<br>
+      <em>Agregar</em> en la tabla de temas ingrese el numero, titulo y opcionalmente el contenido del tema<br>
+    (puede definir o editar el temario en cualquier momento posterior)</li>
+  </ul>
+  <li>Haga click en el bot&oacute;n <em>Guardar</em> <img src="img/guarda.jpg"></li>
+  <li>Si en alg&uacute;n momento desea eliminar una materia de la lista haga click en el bot&oacute;n
+  <em>Quitar una materia</em> <img src="img/quita.jpg"><br>Se le pedir&aacute; la clave de la materia
+  que desea eliminar<br><span class="rojo">(debe tener presente que si elimina materias relacionadas
+  con el registro de alg&uacute;n grupo, vigente o no, puede crear inconsistencia en los datos)</span></li>
+ </ul>
+ <img src="img/vendtsdoc.jpg">
+ </p>
+<h3><a name="hrsema">Horario semanal</a></h3>
+<p>El sistema proporciona una ventana en la cual puede ver el horario semanal vigente al momento de consultarla.
+El horario se muestra en forma tabular y se compone por: los horarios de sesiones para un grupo, los horarios de
+sesiones para asesor&iacute;as a tesistas y horarios para otras actividades. Los horarios para sesiones de grupos 
+y asesor&iacute;as a tesistas deben ser agregados desde la ventada de <em>Calendario de grupo</em> y 
+<em>Asesor&iacute;as</em> respectivamente. Para otras actividades debe agregar los horarios desde esta ventana</p>
+<p> Para agregar horarios de otras actividades:
+ <ul>
+  <li>Haga click en el men&uacute; <em>Sistema</em></li>
+  <li>Haga click en el submen&uacute; <em>Horario semanal vigente</em><br>
+    (se cargara autom&aacute;ticamente horarios de sesiones y asesor&iacute;as vigentes)</li>
+  <li>Haga click en el bot&oacute;n agregar: <br> Aparecer&aacute; un dialogo, indique el d&iacute;a de la semana y hora inicial
+    y final de la actividad<br> haga click en el bot&oacute;n <em>Crear</em> aparecer&aacute; un dialogo, indique la
+    actividad y haga click en <em>Aceptar.</em></li>
+  <li>Una actividad creada de esta forma siempre se considerara vigente</li>
+  <li>Cuando esta actividad no sea vigente podr&aacute; quitarla haciendo click sobre ella y eligiendo quitar<br>
+   (no se recomienda quitar sesiones para grupo o asesor&iacute;as a tesistas, éstas al dejar de ser vigentes no se cargaran)</li>
+  <li>Puede imprimir el horario haciendo click en el bot&oacute;n <em>Imprimir horario</em> <img src="img/impresora.jpg"></li>
+ </ul>
+ <img src="img/venhrsem.jpg">
+ </p>
+<h3><a name="repmate">Reportes de materia</a></h3>
+<p>Puede crear reportes gr&aacute;ficos de estad&iacute;sticas de una materia. El sistema puede generar dos tipos de reportes en base a
+los datos acumulados de todos los alumnos que han cursado alguna materia.</p>
+<p> Para generar los reportes:
+ <ul>
+  <li>Haga click en el men&uacute; <em>Reportes</em></li>
+  <li>Haga click en el submen&uacute; <em>Por materia</em></li>
+  <li>En la ventana <em>Reportes de materia</em> indique la clave de la materia haga click en <em>Cargar.</em></li>
+  <li>Si hay datos de alumnos que hayan cursado la materia se generaran los siguientes dos reportes</li>
+  <li>Porcentaje de calificaciones obtenidas en esta materia<br>
+   Muestra el porcentaje de alumnos (sobre el total que han cursado la materia)<br>
+   que han sacado determinada calificaci&oacute;n en base a rangos desde 7 hasta 10 con intervalos de 0.5</li>
+  <li>Porcentaje de aprobaci&oacute;n de alumnos<br>
+   Muestra el porcentaje de alumnos (sobre el total que han cursado la materia)<br>
+   que han aprobado, reprobado o repetido esta materia</li>
+ </ul>
+ <img src="img/venrepmate.jpg">
+ </p>
+<h3><a name="avisis">Avisos del sistema</a></h3>
+<p>El sistema pose una ventana de avisos tipo recordatorios que puede ser configurada para que
+autom&aacute;ticamente muestre avisos de pr&oacute;ximas sesiones programadas (sesiones de asesor&iacute;as o clases a
+un grupo), para ver como configurar esta ventana pase a la siguiente secci&oacute;n <em>Preferencias</em>
+Si habilita esta opci&oacute;n los avisos se muestran autom&aacute;ticamente al iniciar el sistema o pueden
+ser llamados en cualquier momento haciendo click en el bot&oacute;n <em>Avisos del sistema</em>
+<img src="img/venavis.jpg"> que se encuentra en la esquina inferior derecha cerca del reloj.</p>
+<img src="img/avisos.jpg">
+<p>Dentro de la ventana de avisos los recordatorios se muestran en una lista ordenada por fecha,
+puede hacer click en un aviso para abrir el registro correspondiente y ver m&aacute;s detalles.</p>
+<h3><a name="errSurprise">Errores inesperados</a></h3>
+<p>El sistema pose varios m&eacute;todos para detectar errores en tiempo de ejecuci&oacute;n, como por ejemplo
+validar los datos ingresados en los formularios, detectar si falla una operaci&oacute;n al enviar
+o recibir datos del servidor, aun as&iacute; en ocasiones pueden surgir errores (conocidos como bugs)
+inesperados. El sistema al detectar uno de estos errores ofrece la opci&oacute;n de crear un
+archivo con el informe del error ocurrido, el informe no recoge datos o informaci&oacute;n del equipo
+ni de la base de datos, &uacute;nicamente los datos t&eacute;cnicos relativos al error ocurrido. Si desea ayudar
+a mejorar el desempeño del sistema, en caso de que surja un bug, puede crear el archivo de informe y
+enviarlo a la direcci&oacute;n de correo electr&oacute;nico que aparece en la ventana Acerca de.</p>
+<h3><a name="pref">Preferencias</a></h3>
+<p>En men&uacute; <em>Sistema</em> submen&uacute; <em>Preferencias</em> puede cambiar la apariencia del sistema, Metal (default) o sistema 
+operativo, as&iacute; como configurar si desea que el sistema despliegue autom&aacute;ticamente la ventana 
+de avisos al iniciar, que tipo de recordatorios desea ver y el alcance en d&iacute;as pr&oacute;ximos que  desea abarcar, por ultimo tambi&eacute;n
+puede indicar un archivo de imagen para utilizar como logo al imprimir reportes.</p> <img src="img/preferencias.jpg">
+</div>
+</blockquote>
+<p id="licencia"> Copyright © 2010 Pedro Cardoso Rodríguez. Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation;
+with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section 
+entitled "GNU Free Documentation License". </p>
+</body>
+</html>
