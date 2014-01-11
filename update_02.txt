@@ -6,5 +6,6 @@
 + Arreglo visual control jLabel3 ventana alumnos.FrameDesAca (desbordamiento de texto)
 + Arreglo visual control jLabel1 ventana alumnos.FrameDesGru (desbordamiento de texto)
 + Verificación de concordancia case-sensitive archivos de manual de ayuda
+
    *** Update 02
 + Correciones ortograficas varias
